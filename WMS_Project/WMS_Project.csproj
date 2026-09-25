@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F1C2A3B-4D5E-4F60-8A7B-9C0D1E2F3A4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WMS_Project</RootNamespace>
+    <AssemblyName>WMS_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WarehousesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\WarehousesControl.Designer.cs">
+      <DependentUpon>WarehousesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ItemsControl.Designer.cs">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BlankSectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\BlankSectionControl.Designer.cs">
+      <DependentUpon>BlankSectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReceivingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ReceivingControl.Designer.cs">
+      <DependentUpon>ReceivingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransfersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\TransfersControl.Designer.cs">
+      <DependentUpon>TransfersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PickingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PickingControl.Designer.cs">
+      <DependentUpon>PickingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DispatchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DispatchControl.Designer.cs">
+      <DependentUpon>DispatchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StockMonitoringControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\StockMonitoringControl.Designer.cs">
+      <DependentUpon>StockMonitoringControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MovementHistoryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MovementHistoryControl.Designer.cs">
+      <DependentUpon>MovementHistoryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Db.cs" />
+    <Compile Include="Data\Repository.cs" />
+    <Compile Include="Helpers\UiHelper.cs" />
+    <Compile Include="Models\Models.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Database\CreateDatabase.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DispatchControl.resx">
+      <DependentUpon>DispatchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MovementHistoryControl.resx">
+      <DependentUpon>MovementHistoryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PickingControl.resx">
+      <DependentUpon>PickingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ReceivingControl.resx">
+      <DependentUpon>ReceivingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StockMonitoringControl.resx">
+      <DependentUpon>StockMonitoringControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TransfersControl.resx">
+      <DependentUpon>TransfersControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

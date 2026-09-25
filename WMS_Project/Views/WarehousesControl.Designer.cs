@@ -1,0 +1,237 @@
+namespace WMS_Project.Views
+{
+    partial class WarehousesControl
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.pnlForm = new System.Windows.Forms.Panel();
+            this.pnlFormAccent = new System.Windows.Forms.Panel();
+            this.lblFormTitle = new System.Windows.Forms.Label();
+            this.lblCode = new System.Windows.Forms.Label();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.lblSelected = new System.Windows.Forms.Label();
+            this.lblListTitle = new System.Windows.Forms.Label();
+            this.gridWarehouses = new System.Windows.Forms.DataGridView();
+            this.pnlForm.SuspendLayout();
+            this.pnlFormAccent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridWarehouses)).BeginInit();
+            this.SuspendLayout();
+            this.pnlForm.Controls.Add(this.pnlFormAccent);
+            this.pnlForm.Controls.Add(this.lblFormTitle);
+            this.pnlForm.Controls.Add(this.lblCode);
+            this.pnlForm.Controls.Add(this.txtCode);
+            this.pnlForm.Controls.Add(this.lblName);
+            this.pnlForm.Controls.Add(this.txtName);
+            this.pnlForm.Controls.Add(this.lblAddress);
+            this.pnlForm.Controls.Add(this.txtAddress);
+            this.pnlForm.Controls.Add(this.btnAdd);
+            this.pnlForm.Controls.Add(this.btnUpdate);
+            this.pnlForm.Controls.Add(this.btnDelete);
+            this.pnlForm.Controls.Add(this.btnClear);
+            this.pnlForm.Controls.Add(this.lblSelected);
+            this.pnlForm.Name = "pnlForm";
+            this.pnlForm.BackColor = System.Drawing.Color.White;
+            this.pnlForm.Location = new System.Drawing.Point(20, 10);
+            this.pnlForm.Size = new System.Drawing.Size(860, 170);
+            this.pnlForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top) | (System.Windows.Forms.AnchorStyles.Left) | (System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlForm.TabIndex = 0;
+            this.pnlFormAccent.Name = "pnlFormAccent";
+            this.pnlFormAccent.BackColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.pnlFormAccent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlFormAccent.Location = new System.Drawing.Point(0, 0);
+            this.pnlFormAccent.Size = new System.Drawing.Size(860, 4);
+            this.pnlFormAccent.TabIndex = 0;
+            this.lblFormTitle.Name = "lblFormTitle";
+            this.lblFormTitle.AutoSize = true;
+            this.lblFormTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lblFormTitle.ForeColor = System.Drawing.Color.FromArgb(13, 59, 122);
+            this.lblFormTitle.Location = new System.Drawing.Point(20, 16);
+            this.lblFormTitle.Text = "Warehouse details";
+            this.lblFormTitle.TabIndex = 1;
+            this.lblCode.Name = "lblCode";
+            this.lblCode.AutoSize = true;
+            this.lblCode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblCode.ForeColor = System.Drawing.Color.FromArgb(13, 59, 122);
+            this.lblCode.Location = new System.Drawing.Point(20, 50);
+            this.lblCode.Text = "Code *";
+            this.lblCode.TabIndex = 2;
+            this.txtCode.Name = "txtCode";
+            this.txtCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCode.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtCode.Location = new System.Drawing.Point(20, 72);
+            this.txtCode.Size = new System.Drawing.Size(120, 25);
+            this.txtCode.TabIndex = 3;
+            this.lblName.Name = "lblName";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(13, 59, 122);
+            this.lblName.Location = new System.Drawing.Point(155, 50);
+            this.lblName.Text = "Name *";
+            this.lblName.TabIndex = 4;
+            this.txtName.Name = "txtName";
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtName.Location = new System.Drawing.Point(155, 72);
+            this.txtName.Size = new System.Drawing.Size(260, 25);
+            this.txtName.TabIndex = 5;
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(13, 59, 122);
+            this.lblAddress.Location = new System.Drawing.Point(430, 50);
+            this.lblAddress.Text = "Address";
+            this.lblAddress.TabIndex = 6;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtAddress.Location = new System.Drawing.Point(430, 72);
+            this.txtAddress.Size = new System.Drawing.Size(410, 25);
+            this.txtAddress.TabIndex = 7;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(30, 136, 229);
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Location = new System.Drawing.Point(20, 118);
+            this.btnAdd.Size = new System.Drawing.Size(160, 34);
+            this.btnAdd.Text = "+ Add warehouse";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(227, 238, 252);
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.btnUpdate.FlatAppearance.BorderSize = 1;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnUpdate.Location = new System.Drawing.Point(190, 118);
+            this.btnUpdate.Size = new System.Drawing.Size(120, 34);
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.BackColor = System.Drawing.Color.White;
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(198, 40, 40);
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(255, 235, 238);
+            this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(198, 40, 40);
+            this.btnDelete.FlatAppearance.BorderSize = 1;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.Location = new System.Drawing.Point(320, 118);
+            this.btnDelete.Size = new System.Drawing.Size(120, 34);
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.TabIndex = 10;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.BackColor = System.Drawing.Color.White;
+            this.btnClear.ForeColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(227, 238, 252);
+            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(21, 101, 192);
+            this.btnClear.FlatAppearance.BorderSize = 1;
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnClear.Location = new System.Drawing.Point(450, 118);
+            this.btnClear.Size = new System.Drawing.Size(120, 34);
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.TabIndex = 11;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.lblSelected.Name = "lblSelected";
+            this.lblSelected.AutoSize = true;
+            this.lblSelected.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSelected.ForeColor = System.Drawing.Color.FromArgb(100, 116, 139);
+            this.lblSelected.Location = new System.Drawing.Point(590, 127);
+            this.lblSelected.Text = "Tip: click a row below to edit it.";
+            this.lblSelected.TabIndex = 12;
+            this.lblListTitle.Name = "lblListTitle";
+            this.lblListTitle.AutoSize = true;
+            this.lblListTitle.Font = new System.Drawing.Font("Segoe UI", 11.5F, System.Drawing.FontStyle.Bold);
+            this.lblListTitle.ForeColor = System.Drawing.Color.FromArgb(13, 59, 122);
+            this.lblListTitle.Location = new System.Drawing.Point(22, 193);
+            this.lblListTitle.Text = "Warehouses";
+            this.lblListTitle.TabIndex = 1;
+            this.gridWarehouses.Name = "gridWarehouses";
+            this.gridWarehouses.BackgroundColor = System.Drawing.Color.White;
+            this.gridWarehouses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridWarehouses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridWarehouses.Location = new System.Drawing.Point(20, 223);
+            this.gridWarehouses.Size = new System.Drawing.Size(860, 382);
+            this.gridWarehouses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top) | (System.Windows.Forms.AnchorStyles.Bottom) | (System.Windows.Forms.AnchorStyles.Left) | (System.Windows.Forms.AnchorStyles.Right)));
+            this.gridWarehouses.ReadOnly = true;
+            this.gridWarehouses.AllowUserToAddRows = false;
+            this.gridWarehouses.AllowUserToDeleteRows = false;
+            this.gridWarehouses.RowHeadersVisible = false;
+            this.gridWarehouses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridWarehouses.MultiSelect = false;
+            this.gridWarehouses.TabIndex = 2;
+            this.gridWarehouses.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridWarehouses_CellClick);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(240, 245, 252);
+            this.Controls.Add(this.pnlForm);
+            this.Controls.Add(this.lblListTitle);
+            this.Controls.Add(this.gridWarehouses);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "WarehousesControl";
+            this.Size = new System.Drawing.Size(900, 620);
+            this.pnlForm.ResumeLayout(false);
+            this.pnlForm.PerformLayout();
+            this.pnlFormAccent.ResumeLayout(false);
+            this.pnlFormAccent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridWarehouses)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel pnlForm;
+        private System.Windows.Forms.Panel pnlFormAccent;
+        private System.Windows.Forms.Label lblFormTitle;
+        private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lblSelected;
+        private System.Windows.Forms.Label lblListTitle;
+        private System.Windows.Forms.DataGridView gridWarehouses;
+    }
+}
